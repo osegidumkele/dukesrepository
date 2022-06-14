@@ -1,3 +1,4 @@
+#Dumkele Osegi PSID 1894081
 wall_height = int(input('Enter wall height (feet):\n'))
 wall_width = int(input('Enter wall width (feet):\n'))
 wall_area = wall_height * wall_width
