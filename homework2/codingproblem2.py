@@ -19,7 +19,8 @@ def find(timeformat):
 with open("inputDates.txt") as f:
     for y in f.readlines():
         if y.strip() != "-1":
-            print(find(y.strip()))
-            
-
+            result = find(y.strip())
+            if result != "":
+                with open("parsedDates,txt", "a+") as w:
+                    w.write(result+"\n")
 
