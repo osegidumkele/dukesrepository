@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body class="container">
+    
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Users</h1>
+            <p>Refresh the page to load new users</p>
+            <ul>
+                <% values.forEach(function(users) { %>
+                    <li>
+                        <strong>Name: <%= users.name %></strong>
+                    </li>
+                    <li>
+                        <strong>City: <%= users.address.city %></strong>   
+                    </li>
+                    
+                    <li>
+                        <strong>Company: <%= users.company.name %></strong>
+                    </li>
+                <% }); %>
+            </ul>
+
+
+        </div>
+    </main>
+    
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+    
+    </html>
