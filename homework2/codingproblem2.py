@@ -1,4 +1,4 @@
-#Dumkele Osegi, PSID 1894081
+#Dumkele Osegi, Python program to traverse through a .txt file for dates
 import sys
 import datetime
 
